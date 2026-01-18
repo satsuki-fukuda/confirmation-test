@@ -27,11 +27,10 @@
 
 <h2>使用技術（実行環境）</h2>
 <p>
-・PHP<br />
-・Laravel<br />
-・jquery<br />
-・MySQL<br />
-・nginx<br />
+・PHP ^7.3|^8.0<br />
+・Laravel 2.9.3<br />
+・MySQL 8.0.26<br />
+・nginx 1.21.1<br />
 </p>
 
 <h2>ER図</h2>
