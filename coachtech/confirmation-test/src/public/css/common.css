@@ -1,0 +1,22 @@
+body {
+    background-color: #fff;
+    font-family: "PT Serif", serif;
+}
+
+.header {
+    border-bottom: 2px solid #87796a;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #87796a;
+    text-decoration: none;
+    font-size: 28px;
+}

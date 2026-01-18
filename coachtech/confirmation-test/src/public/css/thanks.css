@@ -1,0 +1,58 @@
+body {
+    background-color: #fff;
+    font-family: "PT Serif", serif;
+}
+
+
+.thanks__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #87796a;
+}
+
+.thanks__background-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18vw;
+    color: #8d8d81;
+    opacity: 1.0;
+    z-index: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.thanks__inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.thanks__heading h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #87796a;
+}
+
+.thanks__button {
+    text-align: center;
+}
+
+.thanks__button-link {
+    display: inline-block;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 3px;
+    background:#87796a;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
