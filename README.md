@@ -2,7 +2,7 @@
 
 <h2>Dockerビルド</h2>
 <p>
-・<br />
+・git@github.com:satsuki-fukuda/confirmation-test.git<br />
 ・docker-compose up -d --build
 </p>
 
