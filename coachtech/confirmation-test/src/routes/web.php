@@ -26,7 +26,6 @@ Route::get('/', [ContactController::class, 'index']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
 
-
 Route::get('/confirm', function () {
     return view('confirm');
 });
@@ -39,10 +38,10 @@ Route::middleware('guest')->group(function () {
     Route::post('/login', [LoginController::class, 'authenticate']);
 });
 
-Route::middleware(['auth', \App\Http\Middleware\AdminMiddleware::class])->group(function () {
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/register', [RegisterController::class, 'store']);
 
-    Route::get('/register', [RegisterController::class, 'index'])->name('register');
-    Route::post('/register', [RegisterController::class, 'store']);
+Route::middleware(['auth', \App\Http\Middleware\AdminMiddleware::class])->group(function () {
 
     Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/', [AdminController::class, 'index'])->name('index'); // /admin
